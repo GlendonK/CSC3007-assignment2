@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/main.css">
+
+
+    <title>CSC3007 Assignment 2</title>
+
+</head>
+
+<body>
+    <script type="module" src="src/index.js"></script>
+    <script src="../node_modules/d3/dist/d3.js"></script>
+    <div class="container is-max-widescreen">
+        <div class="has-text-centered m-2">
+            <h1 class="title is-underlined is-size-1">
+                CSC3007 Assignment 2
+            </h1>
+            <p class="subtitle">
+                Crime DataSet
+            </p>
+        </div>
+        <h class=" is-size-3 m-2 is-underlined">Crime Data Each Year</h>
+        <div id="chart1" class="">
+
+        </div>
+        <script>
+            const drop = () => {
+                var dropdown = document.querySelector('.dropdown');
+                dropdown.classList.toggle('is-active');
+            }
+
+
+
+
+        </script>
+
+        <h class="is-size-3 m-2 is-underlined">Data By Crimes</h>
+        <div class="columns m-2">
+            <div class="dropdown column is-2" onclick="drop()">
+                <div class="dropdown-trigger">
+                    <button class="button" id="dropButton" aria-haspopup="true" aria-controls="dropdown-menu">
+                        <span id="dropText">Choose The Crime</span>
+                        <span class="icon">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 330 330"
+                                style="enable-background:new 0 0 330 330;" xml:space="preserve">
+                                <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393
+        c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393
+        s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z" />
+    
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                    <div class="dropdown-content" id="dropdown-content">
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div id="chart2" class="">
+
+        </div>
+
+    </div>
+</body>
+
+</html>

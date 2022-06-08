@@ -1,0 +1,18 @@
+{
+  "name": "assignment2",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "author": "glendonk",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "bulma": "^0.9.4",
+    "d3": "^7.4.4",
+    "node-sass": "^7.0.1"
+  },
+  "scripts": {
+    "css-build": "node-sass --omit-source-map-url sass/main.sass css/main.css",
+    "css-watch": "yarn run css-build -- --watch",
+    "start": "yarn run css-watch"
+  }
+}
