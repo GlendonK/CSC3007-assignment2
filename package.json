@@ -11,7 +11,7 @@
     "node-sass": "^7.0.1"
   },
   "scripts": {
-    "css-build": "node-sass --omit-source-map-url sass/main.sass css/main.css",
+    "css-build": "node-sass --omit-source-map-url sass/main.sass main.css",
     "css-watch": "yarn run css-build -- --watch",
     "start": "yarn run css-watch"
   }
