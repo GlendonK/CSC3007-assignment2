@@ -26,7 +26,7 @@ const start = async () => {
             zDomain: z(),
             colors: d3.schemeSpectral[z().length],
             width: 1000,
-            height: 1000
+            height: 800
         })
         // console.log(data)
         // Initialize the plot with the first dataset
@@ -196,7 +196,7 @@ const getByCrime = (data, crime) => {
 
 const margin = { top: 30, right: 30, bottom: 70, left: 60 },
     width = 1000 - margin.left - margin.right,
-    height = 1000 - margin.top - margin.bottom;
+    height = 850 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
 const svg2 = d3.select("#chart2")
